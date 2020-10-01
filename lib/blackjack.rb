@@ -8,9 +8,9 @@ def deal_card
   rand(1..11)
 end
 
-def display_card_total(card_sum)
+def display_card_total(total)
   # code #display_card_total here
-  puts "Your cards add up to #{card_sum}"
+  puts "Your cards add up to #{total}"
 end
 
 def prompt_user
@@ -25,10 +25,14 @@ end
 
 def end_game(total)
   # code #end_game here
+  puts "Sorry, you hit  #{card_total}. Thanks for playing!"
 end
 
 def initial_round
   # code #initial_round here
+  deal_card
+  deal_card
+  display
 end
 
 def hit?
