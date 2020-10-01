@@ -66,7 +66,7 @@ end
 def runner
  welcome 
  initial_round
- hit?(total) && display_card_total(total) until total > 21
+ hit?(total) && display_card_total(total) until display_card_total(total) > 21
  end_game
 end
     
